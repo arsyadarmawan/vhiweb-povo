@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: About
+
+# Model Form Field configuration
+form: $/arsyad/about/models/about/fields.yaml
+
+# Model Class name
+modelClass: Arsyad\About\Models\About
+
+# Default redirect location
+defaultRedirect: arsyad/about/abouts
+
+# Create page
+create:
+    title: Create About
+    redirect: arsyad/about/abouts/update/:id
+    redirectClose: arsyad/about/abouts
+
+# Update page
+update:
+    title: Edit About
+    redirect: arsyad/about/abouts
+    redirectClose: arsyad/about/abouts
+
+# Preview page
+preview:
+    title: Preview About

@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+        label: Judul
+    description:
+        label: Deskripsi
+        type: richeditor
+    galleries:
+        label: Galeri
+        type: fileupload
+        tab: Galeri
+
+

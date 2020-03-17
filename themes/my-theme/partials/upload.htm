@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="container">
+        <div class="col-md-12 col-xs-12">
+        
+        {{ form_open({ request: 'Media::onRegistMedia', files: true }) }}
+            <label>Upload</label>
+            <input name="galleries" class="form-control" type="file">
+            <label>Judul</label>
+            <input name="title" class="form-control" type="text" placeholder="Masukan Judul Post">
+            <label>Deskripsi</label>
+            <textarea class="form-control" placeholder="masukan deskripsi media" name="description"> </textarea>
+            <input name="user_id" class="form-control" type="hidden" value="{{user.id}}">
+            <br>
+            <button class="btn btn-primary" type="submit">Simpan</button>
+        {{ form_close() }}
+    </div>
+<div>

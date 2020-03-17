@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    description:
+        label: Deskripsi
+        type: textarea
+        size: large
+    media:
+        label: Media
+        type: fileupload
+        imageHeight: 260
+        imageWidth: 260

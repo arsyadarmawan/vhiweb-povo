@@ -1,0 +1,56 @@
+name: 'Main Menu'
+items:
+    -
+        title: 'Home'
+        type: cms-page
+        code: ''
+        reference: home
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: 'Privacy Policy'
+        type: cms-page
+        code: ''
+        reference: static/privacy-policy
+        viewBag:
+            isExternal: '0'
+            isHidden: '1'
+            cssClass: ''
+    -
+        title: 'About'
+        type: cms-page
+        code: ''
+        reference: about
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: 'Upload'
+        type: cms-page
+        code: ''
+        reference: upload
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: 'Media'
+        type: cms-page
+        code: ''
+        reference: media/index
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''
+    -
+        title: 'Account'
+        type: cms-page
+        code: ''
+        reference: login
+        viewBag:
+            isExternal: '0'
+            isHidden: '0'
+            cssClass: ''

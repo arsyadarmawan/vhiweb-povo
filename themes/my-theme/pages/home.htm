@@ -1,0 +1,37 @@
+title = "Home"
+url = "/"
+layout = "default"
+is_hidden = 0
+[Media]
+==
+{% set medias = Media.paginate() %}
+{% if user %}
+    <section>
+        <div class="row">
+            <div class="container">
+                {%for media in medias%}
+                    <div class="card">
+                        <div class="col-md-6 col-xs-6">
+                            <img src="{{ media.file_path }}" alt="{{ media.title }}" class="img-responsive">
+                            <p><b>{{media.title}}</b></p
+                        </div>
+                    </div>
+                {% endfor %}
+                {{ medias.render|raw }}
+            </div>
+        </div>
+    </section>
+{% else %}
+    <div class="hero">
+        <div class="content-center">
+            <div class="container">
+                <h1>Hi Bro! Let's Get Started</h1>
+                <p class="lead">Login First If you want to see our media.</p>
+                <p>
+                    <a class="btn btn-lg btn-primary">Start Crafting</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+{% endif %}

@@ -1,0 +1,13 @@
+title = "Upload"
+url = "/upload"
+layout = "default"
+description = "Upload Media"
+is_hidden = 0
+[Media]
+
+[session]
+    security = "user"
+    redirect = "home"
+
+==
+{% partial "upload" %}

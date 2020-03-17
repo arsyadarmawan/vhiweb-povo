@@ -1,0 +1,18 @@
+title = "Media Detail"
+url = "/post/detail/:parameter"
+layout = "default"
+is_hidden = 0
+[Media]
+parameter="{{ :parameter }}"
+==
+{% set media = Media.getCurrent %}
+
+<div class="col-md-12 col-xs-12">
+       	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<img src="{{ media.file_path }}" alt="{{ media.title }}" class="text-center img-responsive">
+			<p><b>{{media.title}}</b></p>
+			<p>{{html_strip(media.description)}}</p>
+		</div>
+	</div>
+</div>

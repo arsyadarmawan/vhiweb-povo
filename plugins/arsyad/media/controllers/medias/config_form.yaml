@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Media
+
+# Model Form Field configuration
+form: $/arsyad/media/models/media/fields.yaml
+
+# Model Class name
+modelClass: Arsyad\Media\Models\Media
+
+# Default redirect location
+defaultRedirect: arsyad/media/medias
+
+# Create page
+create:
+    title: Create Media
+    redirect: arsyad/media/medias/update/:id
+    redirectClose: arsyad/media/medias
+
+# Update page
+update:
+    title: Edit Media
+    redirect: arsyad/media/medias
+    redirectClose: arsyad/media/medias
+
+# Preview page
+preview:
+    title: Preview Media

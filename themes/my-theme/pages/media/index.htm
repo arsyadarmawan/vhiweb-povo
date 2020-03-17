@@ -1,0 +1,30 @@
+title = "Media"
+url = "/post"
+layout = "default"
+is_hidden = 0
+[Media]
+==
+
+{% if user %}
+    {% set medias = Media.getMedia(user.id) %}
+{% endif %}
+<section>
+
+    <div class="row">
+        <div class="container">
+        <h3 class="text-center"><b>Media Saya</b></h3>
+        <br>
+            <div class="col-md-12 col-xs-12">
+                {%for media in medias%}
+                    <div class="card">
+                        <!-- <a href="{{ 'media/detail'|page({parameter: media.slug}) }}"><img src="{{media.galleries[0].getPath()}}"></a> --!>
+                        <a href="{{ 'media/detail'|page({parameter: media.slug}) }}"><img src="{{media.file_path}}"></a>
+                        <p><b>{{media.title}}</b></p>
+                        <p>{{ str_limit(media.description, 100, '... Read more!') }}</p>
+                    </div>
+                {%endfor%}
+            </div>
+            {{ medias.render|raw }}
+        </div>
+    </div>
+</section>
